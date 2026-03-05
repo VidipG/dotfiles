@@ -1,0 +1,30 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 14,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Moonlight II",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.cursorBlinking": "expand",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.external.osxExec": "iTerm.app  ",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 3,
+    "terminal.integrated.customGlyphs": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "on",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "gopls": {
+        "ui.semanticTokens": true
+    },
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "files.insertFinalNewline": true,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "Fira code",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "editor.fontLigatures": true,
+    "editor.inlayHints.fontFamily": "Fira code"
+}
