@@ -6,6 +6,7 @@ A repository for my configuration files, stored as originals with symlinks creat
 
 - `zshrc/`: Shell configuration
 - `vscode/`: VS Code settings and extensions
+- `tmux/`: Tmux configuration
 
 ## Symlink Setup
 
@@ -21,3 +22,8 @@ ln -s <REPO_PATH>/zshrc/.zshrc ~/.zshrc
 ln -s <REPO_PATH>/vscode/settings.json <VSCODE_CONFIG_DIR>/settings.json
 ```
 > **Note:** `<VSCODE_CONFIG_DIR>` is typically `~/Library/Application Support/Code/User` for macOS.
+
+### Tmux
+```bash
+ln -s <REPO_PATH>/tmux/.tmux.conf ~/.tmux.conf
+```

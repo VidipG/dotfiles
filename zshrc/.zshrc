@@ -51,6 +51,8 @@ zstyle ":fzf-tab:complete:cd:*" fzf-preview "ls --color=always \${realpath}"
 # 6. EXTERNAL TOOLS
 # fnm (Node version manager)
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive --shell zsh)"
+# uv
+. "$HOME/.local/bin/env"
 
 # 7. ALIASES
 alias ga='git add .'

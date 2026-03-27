@@ -175,6 +175,7 @@
     "Green Component" : 1
   },
   "Silence Bell" : false,
+  "Use Custom Tab Title" : false,
   "Rows" : 25,
   "Draw Powerline Glyphs" : true,
   "Guid" : "22EBBF42-7C3E-4534-99D5-EF5ED275C83A",
@@ -335,6 +336,7 @@
   },
   "Animate Movement" : true,
   "Non-ASCII Anti Aliased" : true,
+  "Allow Title Reporting" : true,
   "Ansi 10 Color" : {
     "Red Component" : 0.3450070321559906,
     "Color Space" : "sRGB",
@@ -502,6 +504,7 @@
     "Alpha Component" : 0.25,
     "Green Component" : 0.77217715978622437
   },
+  "Title Components" : 3,
   "Custom Directory" : "Recycle",
   "Working Directory" : "\/Users\/vidip",
   "ASCII Anti Aliased" : true,
