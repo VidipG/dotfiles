@@ -55,7 +55,7 @@ eval "$(fnm env --use-on-cd --version-file-strategy=recursive --shell zsh)"
 . "$HOME/.local/bin/env"
 
 # 7. ALIASES
-ga() { git add "${@:-.}"; }
+alias gad='git add'
 alias gcm='git commit -m'
 alias gp='git push'
 alias gst='git status -s'

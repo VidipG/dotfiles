@@ -89,13 +89,20 @@
   },
   "Cursor Type" : 1,
   "Keyboard Map" : {
-    "0xf728-0x0" : {
+    "0x7f-0x100000" : {
       "Action" : 11,
-      "Text" : "0x4"
+      "Text" : "0x15"
     },
     "0xf702-0x280000" : {
       "Action" : 10,
       "Text" : "b"
+    },
+    "0xd-0x20000-0x24" : {
+      "Version" : 2,
+      "Apply Mode" : 1,
+      "Action" : 10,
+      "Text" : "[13;2u",
+      "Escaping" : 2
     },
     "0xf702-0x300000" : {
       "Action" : 11,
@@ -113,9 +120,9 @@
       "Action" : 11,
       "Text" : "0x5"
     },
-    "0x7f-0x100000" : {
+    "0xf728-0x0" : {
       "Action" : 11,
-      "Text" : "0x15"
+      "Text" : "0x4"
     },
     "0x7f-0x80000" : {
       "Action" : 11,
