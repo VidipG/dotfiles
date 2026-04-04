@@ -14,8 +14,8 @@ on-focus-changed          = ['move-mouse window-lazy-center']
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [gaps]
-    inner.horizontal = 8
-    inner.vertical   = 8
+    inner.horizontal = 10
+    inner.vertical   = 10
     outer.left       = 12
     outer.bottom     = 12
     outer.top        = 12
@@ -51,56 +51,8 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     run = 'layout floating'
 
 [[on-window-detected]]
-    if.app-id = 'com.1password.1password'
-    run = 'layout floating'
-
-[[on-window-detected]]
     if.app-id = 'com.apple.finder'
     run = 'layout floating'
-
-# -----------------------------------------------
-# Auto-assign apps to workspaces on new window creation
-# -----------------------------------------------
-
-[[on-window-detected]]
-    if.app-id = 'com.googlecode.iterm2'
-    run = 'move-node-to-workspace 1'
-
-[[on-window-detected]]
-    if.app-id = 'com.mitchellh.ghostty'
-    run = 'move-node-to-workspace 1'
-
-[[on-window-detected]]
-    if.app-id = 'com.apple.Terminal'
-    run = 'move-node-to-workspace 1'
-
-[[on-window-detected]]
-    if.app-id = 'com.brave.Browser'
-    run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
-    if.app-id = 'org.mozilla.firefox'
-    run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
-    if.app-id = 'com.google.Chrome'
-    run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
-    if.app-id = 'com.apple.Safari'
-    run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.Outlook'
-    run = 'move-node-to-workspace 8'
-
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.teams2'
-    run = 'move-node-to-workspace 8'
-
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.teams'
-    run = 'move-node-to-workspace 8'
 
 # -----------------------------------------------
 # Key bindings
