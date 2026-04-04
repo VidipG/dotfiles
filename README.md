@@ -7,6 +7,7 @@ A repository for my configuration files, stored as originals with symlinks creat
 - `zshrc/`: Shell configuration
 - `vscode/`: VS Code settings and extensions
 - `tmux/`: Tmux configuration
+- `aerospace/`: Aerospace configuration
 
 ## Symlink Setup
 
@@ -26,4 +27,10 @@ ln -s <REPO_PATH>/vscode/settings.json <VSCODE_CONFIG_DIR>/settings.json
 ### Tmux
 ```bash
 ln -s <REPO_PATH>/tmux/.tmux.conf ~/.tmux.conf
+```
+
+### AeroSpace
+```bash
+mkdir -p ~/.config/aerospace
+ln -s <REPO_PATH>/aerospace/aerospace.toml ~/.config/aerospace/aerospace.toml
 ```

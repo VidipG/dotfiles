@@ -1,0 +1,177 @@
+# AeroSpace config
+# Single ultrawide monitor (C34J79x), MacBook in clamshell mode
+
+config-version = 1
+start-at-login = true
+
+default-root-container-layout      = 'tiles'
+default-root-container-orientation = 'auto'
+
+accordion-padding = 30
+
+# Move mouse cursor to focused window (avoids jarring jumps)
+on-focus-changed          = ['move-mouse window-lazy-center']
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+[gaps]
+    inner.horizontal = 8
+    inner.vertical   = 8
+    outer.left       = 12
+    outer.bottom     = 12
+    outer.top        = 12
+    outer.right      = 12
+
+# All workspaces on the ultrawide; falls back to 'main' if not connected
+[workspace-to-monitor-force-assignment]
+    1 = ['C34J79x', 'main']
+    2 = ['C34J79x', 'main']
+    3 = ['C34J79x', 'main']
+    4 = ['C34J79x', 'main']
+    5 = ['C34J79x', 'main']
+    6 = ['C34J79x', 'main']
+    7 = ['C34J79x', 'main']
+    8 = ['C34J79x', 'main']
+    9 = ['C34J79x', 'main']
+
+# -----------------------------------------------
+# Float specific apps
+# To find a bundle ID: osascript -e 'id of app "App Name"'
+# -----------------------------------------------
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.systempreferences'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.calculator'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.SystemInformation'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.1password.1password'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    run = 'layout floating'
+
+# -----------------------------------------------
+# Auto-assign apps to workspaces on new window creation
+# -----------------------------------------------
+
+[[on-window-detected]]
+    if.app-id = 'com.googlecode.iterm2'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.Terminal'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'com.brave.Browser'
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'org.mozilla.firefox'
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'com.google.Chrome'
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.Safari'
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.Outlook'
+    run = 'move-node-to-workspace 8'
+
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.teams2'
+    run = 'move-node-to-workspace 8'
+
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.teams'
+    run = 'move-node-to-workspace 8'
+
+# -----------------------------------------------
+# Key bindings
+# -----------------------------------------------
+[mode.main.binding]
+
+    # Focus
+    alt-h = 'focus left'
+    alt-j = 'focus down'
+    alt-k = 'focus up'
+    alt-l = 'focus right'
+
+    # Move window
+    alt-shift-h = 'move left'
+    alt-shift-j = 'move down'
+    alt-shift-k = 'move up'
+    alt-shift-l = 'move right'
+
+    # Workspace switching
+    alt-1 = 'workspace 1'
+    alt-2 = 'workspace 2'
+    alt-3 = 'workspace 3'
+    alt-4 = 'workspace 4'
+    alt-5 = 'workspace 5'
+    alt-6 = 'workspace 6'
+    alt-7 = 'workspace 7'
+    alt-8 = 'workspace 8'
+    alt-9 = 'workspace 9'
+
+    # Move window to workspace
+    alt-shift-1 = 'move-node-to-workspace 1'
+    alt-shift-2 = 'move-node-to-workspace 2'
+    alt-shift-3 = 'move-node-to-workspace 3'
+    alt-shift-4 = 'move-node-to-workspace 4'
+    alt-shift-5 = 'move-node-to-workspace 5'
+    alt-shift-6 = 'move-node-to-workspace 6'
+    alt-shift-7 = 'move-node-to-workspace 7'
+    alt-shift-8 = 'move-node-to-workspace 8'
+    alt-shift-9 = 'move-node-to-workspace 9'
+
+    # Layout toggle: tiles ↔ accordion
+    alt-t = 'layout tiles accordion'
+
+    # Float / unfloat focused window
+    alt-shift-space = 'layout floating tiling'
+
+    # Fullscreen (AeroSpace — stays in tiling tree)
+    alt-f = 'fullscreen'
+
+    # Close focused window
+    alt-shift-c = 'close'
+
+    # Jump between last two workspaces
+    alt-tab = 'workspace-back-and-forth'
+
+    # Reload config
+    alt-shift-r = 'reload-config'
+
+    # Enter resize mode
+    alt-r = 'mode resize'
+
+[mode.resize.binding]
+    h = 'resize width -50'
+    l = 'resize width +50'
+    j = 'resize height +50'
+    k = 'resize height -50'
+
+    shift-h = 'resize width -150'
+    shift-l = 'resize width +150'
+    shift-j = 'resize height +150'
+    shift-k = 'resize height -150'
+
+    enter = 'mode main'
+    esc   = 'mode main'
