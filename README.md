@@ -25,6 +25,7 @@ ln -s <REPO_PATH>/vscode/settings.json <VSCODE_CONFIG_DIR>/settings.json
 > **Note:** `<VSCODE_CONFIG_DIR>` is typically `~/Library/Application Support/Code/User` for macOS.
 
 ### Tmux
+- Gruvbox theme: https://github.com/curiousvlxd/gruvbox-ua-iterm
 ```bash
 ln -s <REPO_PATH>/tmux/.tmux.conf ~/.tmux.conf
 ```
