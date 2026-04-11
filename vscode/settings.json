@@ -26,5 +26,11 @@
     "terminal.integrated.fontLigatures.enabled": true,
     "editor.fontLigatures": true,
     "editor.inlayHints.fontFamily": "Fira code",
-    "workbench.colorTheme": "Gruvbox Dark Hard"
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
