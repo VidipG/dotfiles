@@ -1,5 +1,6 @@
 # 1. ENVIRONMENT & PATHS
 export ZSH="$HOME/.oh-my-zsh"
+printf '\e[4 q'
 export PNPM_HOME="/Users/vidip/Library/pnpm"
 [[ ":$PATH:" != *":$PNPM_HOME:"* ]] && export PATH="$PNPM_HOME:$PATH"
 
