@@ -4,10 +4,11 @@ A repository for my configuration files, stored as originals with symlinks creat
 
 ## Repository Structure
 
-- `zshrc/`: Shell configuration
-- `vscode/`: VS Code settings and extensions
-- `tmux/`: Tmux configuration
-- `aerospace/`: Aerospace configuration
+- `zshrc/`: Shell config
+- `vscode/`: VSCode config
+- `tmux/`: Tmux config
+- `aerospace/`: Aerospace config
+- `tablissng`: Tablissng config
 
 ## Symlink Setup
 
