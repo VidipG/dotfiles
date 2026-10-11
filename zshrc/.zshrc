@@ -4,6 +4,10 @@ printf '\e[4 q'
 export PNPM_HOME="/Users/vidip/Library/pnpm"
 [[ ":$PATH:" != *":$PNPM_HOME:"* ]] && export PATH="$PNPM_HOME:$PATH"
 
+# Android SDK (Homebrew)
+export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools"
+
 # 2. OH MY ZSH CONFIG
 ZSH_THEME="bira"
 ENABLE_CORRECTION="true"
@@ -61,3 +65,8 @@ alias gcm='git commit -m'
 alias gp='git push'
 alias gst='git status -s'
 alias reload='source ~/.zshrc'
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/vidip/.lmstudio/bin"
+# End of LM Studio CLI section
+

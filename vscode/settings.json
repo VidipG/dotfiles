@@ -32,5 +32,8 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "chat.viewSessions.orientation": "stacked",
+    "vsicons.dontShowNewVersionMessage": true
 }
